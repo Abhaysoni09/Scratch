@@ -11,7 +11,7 @@ const SubmitProject = () => {
   const fetchteachers = async () => {
     try {
       const res = await axios.get(
-        "https://scratch-wyu3.onrender.com/allteachers"
+        "https://scratch-wyu3.onrender.com/api/allteachers"
       );
       setAllTeacher(res.data.teachers);
     } catch (error) {

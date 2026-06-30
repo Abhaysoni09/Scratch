@@ -8,7 +8,7 @@ const TeacherDashboard = () => {
   const fetchproject = async () => {
     try {
       const res = await axios.get(
-        "https://scratch-wyu3.onrender.com/submittedprojects",
+        "https://scratch-wyu3.onrender.com/api/submittedprojects",
         {
           withCredentials: true,
         }
@@ -28,7 +28,7 @@ const TeacherDashboard = () => {
   const approveProject = async (id) => {
     try {
       await axios.patch(
-        `https://scratch-wyu3.onrender.com/project/approve/${id}`,
+        `https://scratch-wyu3.onrender.com/api/project/approve/${id}`,
         {},
         {
           withCredentials: true,
