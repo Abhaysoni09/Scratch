@@ -11,7 +11,7 @@ const SubmitProject = () => {
   const fetchteachers = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:3000/api/allteachers"
+        "https://scratch-wyu3.onrender.com/allteachers"
       );
       setAllTeacher(res.data.teachers);
     } catch (error) {
@@ -39,7 +39,7 @@ const SubmitProject = () => {
       formData.append("teacherId", teacherId);
 
       await axios.post(
-        "http://localhost:3000/api/project",
+        "https://scratch-wyu3.onrender.com/project",
         formData,
         { withCredentials: true }
       );

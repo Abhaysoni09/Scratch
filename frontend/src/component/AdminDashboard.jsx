@@ -8,9 +8,9 @@ const AdminDashboard = () => {
 
   const fetchData = async () => {
     try {
-      const resTeachers = await axios.get("http://localhost:3000/api/allteachers");
-      const resStudents = await axios.get("http://localhost:3000/api/allstudents");
-      const resProjects = await axios.get("http://localhost:3000/api/allprojects");
+      const resTeachers = await axios.get("https://scratch-wyu3.onrender.com/allteachers");
+      const resStudents = await axios.get("https://scratch-wyu3.onrender.com/allstudents");
+      const resProjects = await axios.get("https://scratch-wyu3.onrender.com/allprojects");
 
       setTeachers(resTeachers.data.teachers);
       setStudents(resStudents.data);

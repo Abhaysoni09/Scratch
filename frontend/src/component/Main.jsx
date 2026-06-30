@@ -10,7 +10,7 @@ const Main = () => {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = await axios.get("http://localhost:3000/api/auth/me",
+                const res = await axios.get("https://scratch-wyu3.onrender.com/me",
                     {
                         withCredentials: true,
                     }

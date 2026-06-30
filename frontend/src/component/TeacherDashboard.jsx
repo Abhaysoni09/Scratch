@@ -8,7 +8,7 @@ const TeacherDashboard = () => {
   const fetchproject = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:3000/api/submittedprojects",
+        "https://scratch-wyu3.onrender.com/submittedprojects",
         {
           withCredentials: true,
         }
@@ -28,7 +28,7 @@ const TeacherDashboard = () => {
   const approveProject = async (id) => {
     try {
       await axios.patch(
-        `http://localhost:3000/api/project/approve/${id}`,
+        `https://scratch-wyu3.onrender.com/project/approve/${id}`,
         {},
         {
           withCredentials: true,
@@ -45,7 +45,7 @@ const TeacherDashboard = () => {
   const rejectProject = async (id) => {
     try {
       await axios.patch(
-        `http://localhost:3000/api/project/reject/${id}`,
+        `https://scratch-wyu3.onrender.com/project/reject/${id}`,
         {},
         {
           withCredentials: true,

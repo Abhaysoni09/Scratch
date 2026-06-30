@@ -7,7 +7,7 @@ const Project = () => {
   const fetchprojects = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:3000/api/createdprojects",
+        "https://scratch-wyu3.onrender.com/createdprojects",
         { withCredentials: true }
       );
 
