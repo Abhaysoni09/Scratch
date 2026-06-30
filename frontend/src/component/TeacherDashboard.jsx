@@ -45,7 +45,7 @@ const TeacherDashboard = () => {
   const rejectProject = async (id) => {
     try {
       await axios.patch(
-        `https://scratch-wyu3.onrender.com/project/reject/${id}`,
+        `https://scratch-wyu3.onrender.com/api/project/reject/${id}`,
         {},
         {
           withCredentials: true,

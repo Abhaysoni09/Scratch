@@ -14,7 +14,7 @@ const Register = () => {
   const submithandle = async (e) => {
     e.preventDefault()
     try {
-      await axios.post("https://scratch-wyu3.onrender.com/register", {
+      await axios.post("https://scratch-wyu3.onrender.com/api/auth/register", {
         username,
         email,
         password,
@@ -32,7 +32,7 @@ const Register = () => {
     const fetchUser = async () => {
       try {
         const res = await axios.get(
-          `https://scratch-wyu3.onrender.com/search?username=${username}`
+          `https://scratch-wyu3.onrender.com/api/auth/search?username=${username}`
         )
 
         setMessage(res.data.message)

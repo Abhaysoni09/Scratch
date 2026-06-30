@@ -11,7 +11,7 @@ const Login = () => {
   const handlesubmit = async (e) => {
     e.preventDefault()
     try {
-      await axios.post("https://scratch-wyu3.onrender.com/login", {
+      await axios.post("https://scratch-wyu3.onrender.com/api/auth/login", {
         identity,
         password
       }, { withCredentials: true })

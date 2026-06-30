@@ -39,7 +39,7 @@ const SubmitProject = () => {
       formData.append("teacherId", teacherId);
 
       await axios.post(
-        "https://scratch-wyu3.onrender.com/project",
+        "https://scratch-wyu3.onrender.com/api/project",
         formData,
         { withCredentials: true }
       );
